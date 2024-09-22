@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 .container {
@@ -86,6 +87,9 @@ ul {
   color: black;
   border: none;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .liToggle {

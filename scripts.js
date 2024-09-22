@@ -24,15 +24,21 @@ addTask.addEventListener('click', () => {
     })
  
 
-// Create remove button and apply design class for remove button
+// Create remove button
   const removeBtn = document.createElement("button")
-   removeBtn.textContent = "Remove";
-   removeBtn.classList.add('removeBtnDesign');
+  removeBtn.textContent = "Remove";
+  // apply design class for remove button
+  removeBtn.classList.add('removeBtnDesign');
+  removeBtn.addEventListener('click', () => {
+  showTask.removeChild(li);
+  });
+  
 
 
   // append li and removeBtn into ul element
   li.append(removeBtn);
   showTask.append(li);
+  textInput.value = '';
 });
 
 
