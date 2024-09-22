@@ -65,6 +65,7 @@ input {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  outline: none;
 }
 
 .todo-task-container {
@@ -103,6 +104,7 @@ ul {
   background-color: rgb(187, 38, 67);
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 
 

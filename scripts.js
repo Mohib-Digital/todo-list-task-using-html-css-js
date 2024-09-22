@@ -14,13 +14,15 @@ addTask.addEventListener('click', () => {
 
   // create an li element
   const li = document.createElement('li');
-  li.textContent = textInput.value;
+  const span = document.createElement("span")
+  span.textContent = textInput.value;
   li.classList.add('liElement');
   
 
+ 
   // add & remove linethrough
-    li.addEventListener("click",function(){
-      li.classList.toggle("liToggle")
+    span.addEventListener("click",function(){
+      span.classList.toggle("liToggle")
     })
  
 
@@ -36,6 +38,7 @@ addTask.addEventListener('click', () => {
 
 
   // append li and removeBtn into ul element
+  li.append(span)
   li.append(removeBtn);
   showTask.append(li);
   textInput.value = '';
