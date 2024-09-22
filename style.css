@@ -92,3 +92,19 @@ ul {
   text-decoration: line-through;
   color: gray;
 }
+
+.removeBtnDesign {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: rgb(187, 38, 67);
+  border: none;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
