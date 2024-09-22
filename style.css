@@ -87,3 +87,8 @@ ul {
   border: none;
   text-align: left;
 }
+
+.liToggle {
+  text-decoration: line-through;
+  color: gray;
+}

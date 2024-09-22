@@ -21,6 +21,10 @@ addTask.addEventListener('click', () => {
   showTask.append(li);
   li.classList.add('liElement');
 
+  // add & remove linethrough
+  li.addEventListener("click",function(){
+    li.classList.toggle("liToggle")
+  })
 
 
 
