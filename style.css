@@ -17,7 +17,7 @@ body {
 
 
 .container {
-width: 40%;
+width: 50%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -32,9 +32,7 @@ transition: all ease 0.3s;
 
 .container:hover {
   box-shadow: 1px 1px 16px 10px rgba(24, 22, 22, 5);
-  border-top: 5px solid #ccc;
-  border-bottom: 2px solid #a09090;
-  cursor: pointer;
+  border: 2px solid gray;
 }
 
 .todo-container {
@@ -105,6 +103,10 @@ ul {
   color: gray;
 }
 
+.hoverEffect:hover {
+  cursor: pointer;
+}
+
 .removeBtnDesign {
   padding: 5px 8px;
   border-radius: 5px;
@@ -116,7 +118,23 @@ ul {
 
 
 
+@media (max-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}
 
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: 95%;
+  }
+}
 
 
 

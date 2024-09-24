@@ -12,11 +12,13 @@ addTask.addEventListener('click', () => {
    return; // Stop further execution if input is empty
   }
 
-  // create an li element
+  // create an li element, create span elemen add classes
   const li = document.createElement('li');
-  const span = document.createElement("span")
+  const span = document.createElement("span");
   span.textContent = textInput.value;
   li.classList.add('liElement');
+  span.classList.add('hoverEffect')
+
   
 
  
