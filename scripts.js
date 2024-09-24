@@ -8,7 +8,7 @@ const showTask = document.getElementById('showTask');
 addTask.addEventListener('click', () => {
 // create condition for empty value
   if (!textInput.value.trim()) {
-   alert('Please type todo task!')
+   alert('Your task cannot be empty. Please enter a task before adding it to the list.')
    return; // Stop further execution if input is empty
   }
 
